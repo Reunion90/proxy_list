@@ -35,8 +35,11 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
-    'proxy_list' =>[
+    'proxy_list' => [
         'fields' => ['ip', 'port', 'country', 'anonymity']
     ],
 
+    'proxy_checker' => [
+        'timeout' => 10
+    ],
 ];

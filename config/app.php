@@ -159,8 +159,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        App\Providers\ProxyListServiceProvider::class
-
+        App\Providers\ProxyListServiceProvider::class,
+        App\Providers\ProxyCheckerProvider::class,
+        App\Providers\LockServiceProvider::class
     ],
 
     /*
