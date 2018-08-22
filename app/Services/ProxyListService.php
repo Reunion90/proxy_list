@@ -10,6 +10,7 @@ namespace App\Services;
 
 
 use App\ProxyList;
+use Illuminate\Database\Eloquent\Collection;
 
 class ProxyListService
 {
@@ -18,7 +19,7 @@ class ProxyListService
      */
     protected $adapter;
 
-    public function __construct($adapter)
+    public function __construct(ProxyListAdapter $adapter)
     {
         $this->adapter = $adapter;
     }
@@ -38,7 +39,7 @@ class ProxyListService
         }
     }
 
-    public function get()
+    public function get(): Collection
     {
         return ProxyList::where('access', '=', 1)->get();
     }
