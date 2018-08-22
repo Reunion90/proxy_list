@@ -10,10 +10,15 @@
 ### Стек технологий:
 - PHP7, 
 - Laravel, 
-- библиотеки для парсинга HTML, 
+- библиотеки для парсинга [HTML(Goutte)](https://github.com/FriendsOfPHP/Goutte), 
 - команды Laravel, 
-- Cron для запуска заданий, 
-- любой UI kit (**Bootstrap**, Semantic-UI) 
+- [mutex](https://github.com/symfony/lock)  
+- Cron для запуска заданий
+ ```bash
+ * * * * * cd /project/dir && php artisan schedule:run >> /dev/null 2>&1
+ ```
+
+- Bootstrap 4 
 ### +: 
 - REST API интерфейс для получения прокси, 
 - тесты функциональные и модульные
@@ -22,4 +27,3 @@
 - https://hidemy.name/ru/proxy-list/ 
 - https://free-proxy-list.net/
 - http://www.freeproxylists.net/ru/
-
